@@ -83,7 +83,7 @@ p{
 }
 
 .header {
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#fff,#B4E6FD);
 }
 
 .header .row{
@@ -160,7 +160,7 @@ h4 {
 }
 
 .offer {
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#fff,#B4E6FD);
     margin-top : 80px;
     padding: 30px 0;
 }
