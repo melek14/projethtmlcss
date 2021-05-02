@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    </head>
+<body>
+    <div class="header">
+    <div class="container">
+
+    <div class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src ="../images/logo.png" width="125px"> </a>
+        </div>
+
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <img src="../images/cart.png" width="30px" height="30px">
+        <img src="../images/menu.png" class="menu-icon" onclick="menuToggle()">
+    </div>
+    </div>
+
+    <!--- account -->
+
+     <div class="account-page">
+         <div class="container">
+             <div class="row">
+                 <div class="col-2">
+                     <img src="../images/phone1.png" width="100%">
+                 </div>
+
+                 <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="Password">
+                            <button type="button" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+
+                        <form id="RegisterForm">
+                            <input type="text" placeholder="UserName" id="username">
+                            <input type="Email" placeholder="Email" id="email">
+                            <input type="password" placeholder="Password" id="pdw">
+                            <button type="button" class="btn" onclick="validForm()">Login</button>
+                        </form>
+                    </div>
+                </div>
+             </div>
+         </div>
+     </div>
+ 
+
+
+<!------- footer ----------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download App for Android And ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="../images/play-store.png">
+                    <img src="../images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="../images/logo-white.png">
+                
+            </div>
+            <div class="footer-col-3">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr> 
+        <p class="copiright"> &copy; INDP2-D 2021</p>
+    </div>
+</div>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>
