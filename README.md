@@ -11,5 +11,5 @@
 - ajouter des fonctions javascript (validation du form, rendre le menu dynamique)
 
 09/05/2021 à 16/05/2021
-- fonctionner le code du tutoriel sur un serveur WildFly 23.0.2
+- tester le code du tutoriel sur un serveur WildFly 23.0.2
 - développez service rest de mini projet
