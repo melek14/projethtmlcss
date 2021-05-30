@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
     </head>
 <body>
-    <div class="header">
+<div id="sec">
+<div class="header">
     <div class="container">
 
     <div class="navbar">
@@ -19,22 +20,22 @@
 
         <nav>
             <ul id="MenuItems">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#" onclick="getData()">Products</a></li>
+                <li><a href="#" >About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="pages/account.html">Account</a></li>
+                <li><a href="#" onclick="load()">Account</a></li>
             </ul>
         </nav>
         <img src="images/cart.png" width="30px" height="30px">
         <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
     </div>
 
-    <div class="row">
+    <div class="row" id="ss">
         <div class="col-2">
             <h1>For a different  <br> Experience</h1>
             <p>Because you're either connected or asleep. With High Technology Brighten your day.  <br> With us it can all go your way.</p>
-            <a href="" class="btn">Explore Now &#8594;</a>
+            <a href="" class="btn" id="test">Explore Now &#8594;</a>
         </div>
 
         <div class="col-2">
@@ -69,8 +70,8 @@
     <h2 class="title">Featured Products</h2>
     <div class="row">
         <div class="col-4">
-            <img src="images/samsung-galaxy-note-20-ultra-tunisie-4-189DT.jpg">
-            <h4>Samsung Galax Note 20 Ultra</h4>
+            <img src="images/product-1.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -78,11 +79,11 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>4 189TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/samsung-galaxy-note-10-plus-argent-stellaire-4-199DT.jpg">
-            <h4>Samsung Galaxy Note 10 Plus</h4>
+            <img src="images/product-2.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -90,11 +91,11 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half"></i>
             </div>
-            <p>4 199TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/oppo-a31-couleur-noir-569DT.jpg">
-            <h4>Oppo A31</h4>
+            <img src="images/product-3.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -102,11 +103,11 @@
                 <i class="fa fa-star-half"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>569TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/samsung-galaxy-note-10-tunisie-3599TND.jpg">
-            <h4>Samsung Galaxy Note 10</h4>
+            <img src="images/product-4.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -114,14 +115,14 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>3 599TND</p>
+            <p>$50.00</p>
         </div>
     </div>
     <h2 class="title">Latest Products</h2>
     <div class="row">
         <div class="col-4">
-            <img src="images/smartphone-samsung-galaxy-note-9-tunisie-3 299TND-Cop.jpg">
-            <h4>Samsung Galaxy Note 9</h4>
+            <img src="images/product-5.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -129,11 +130,11 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>3 299TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/smartphone-samsung-galaxy-a51-rose.jpg">
-            <h4>Samsung Galaxy A51</h4>
+            <img src="images/product-6.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -141,11 +142,11 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half"></i>
             </div>
-            <p>985TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/NOKIA SMARTPHONE 4.2 2019 32 GO.jpg">
-            <h4>Nokia 4.2 32GO</h4>
+            <img src="images/product-7.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -153,11 +154,11 @@
                 <i class="fa fa-star-half"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>399TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
             <img src="images/product-8.jpg">
-            <h4>Oppo A94</h4>
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -165,14 +166,14 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>899TND</p>
+            <p>$50.00</p>
         </div>
     </div>
 
     <div class="row">
         <div class="col-4">
             <img src="images/product-9.jpg">
-            <h4>Oppo A54</h4>
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -180,11 +181,11 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>530TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/oppo-reno-5-5g-1,099TND.jpg">
-            <h4>Oppo Reno 5</h4>
+            <img src="images/product-10.jpg">
+            <h4>Phone</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -192,11 +193,11 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-half"></i>
             </div>
-            <p>1 099 TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/HUAWEI-montre connecté FIT TIA-B09 399DT.jpg">
-            <h4>HUAWEI Smartwatch FIT TIA-B09</h4>
+            <img src="images/product-11.jpg">
+            <h4>smartwatch</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -204,11 +205,11 @@
                 <i class="fa fa-star-half"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>399TND</p>
+            <p>$50.00</p>
         </div>
         <div class="col-4">
-            <img src="images/SAMSUNG MONTRE CONNECTé WATCH ACTIVE - SM-R500 1099DT.jpg">
-            <h4>Samsung Smartwatch SM-R500</h4>
+            <img src="images/product-12.jpg">
+            <h4>Airpods</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -216,7 +217,7 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
-            <p>1 099TND</p>
+            <p>$50.00</p>
         </div>
     </div>
 </div>
@@ -281,7 +282,7 @@
                 
             </div>
             <div class="footer-col-3">
-                <h3>Useful Links</h3>
+                <h3>Liens utiles</h3>
                 <ul>
                     <li>Coupons</li>
                     <li>Blog Post</li>
@@ -305,5 +306,6 @@
 </div>
 
 <script src="scripts/main.js"></script>
+</div>
 </body>
 </html>
