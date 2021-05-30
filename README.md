@@ -13,3 +13,7 @@
 09/05/2021 à 16/05/2021
 - tester le code du tutoriel sur un serveur WildFly 23.0.2
 - développez service rest de mini projet
+
+24/05/2021 à 30/05/2021
+- développement de websocket
+- integration de fetch api 
