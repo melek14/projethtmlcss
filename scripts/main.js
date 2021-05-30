@@ -1,4 +1,58 @@
-/* Menu */
+/* web socket */
+
+
+var wsUri = "ws://echo.websocket.org/";
+var output;
+		
+      function init() {
+         output = document.getElementById("output");
+		 testWebSocket();
+      }
+		
+      function testWebSocket() {
+         websocket = new WebSocket(wsUri);
+			
+         websocket.onopen = function(evt) {
+            onOpen(evt)
+         };
+		
+         websocket.onmessage = function(evt) {
+            onMessage(evt)
+         };
+		
+         websocket.onerror = function(evt) {
+            onError(evt)
+         };
+      }
+		
+      function onOpen(evt) {
+		  var email = document.getElementById("email").value;
+         writeToScreen("CONNECTED");
+         doSend("welcome "+email);
+      }
+		
+      function onMessage(evt) {
+         writeToScreen('<span style = "color: blue;">RESPONSE: ' +
+            evt.data+'</span>'); 
+			websocket.close();
+      }
+
+      function onError(evt) {
+         writeToScreen('<span style="color: red;">ERROR:</span> ' + evt.data);
+      }
+		
+      function doSend(message) {
+         writeToScreen("SENT: " + message);
+		 websocket.send(message);
+      }
+		
+      function writeToScreen(message) {
+         var pre = document.createElement("p"); 
+         pre.style.wordWrap = "break-word"; 
+         pre.innerHTML = message; output.appendChild(pre);
+      }
+	  
+	  /****/
 
 var MenuItems = document.getElementById("MenuItems");
 MenuItems.style.maxHeight = "0px";
@@ -17,22 +71,18 @@ function menuToggle(){
 }
 
 
-/* Form */
 
-var LoginForm = document.getElementById("LoginForm");
-var RegisterForm = document.getElementById("RegisterForm");
-var indicator = document.getElementById("indicator");
 
 function register(){
-    RegisterForm.style.transform = "translateX(0px)";
-    LoginForm.style.transform = "translateX(0px)";
-    indicator.style.transform = "translateX(100px)";
+    document.getElementById("RegisterForm").style.transform = "translateX(0px)";
+    document.getElementById("LoginForm").style.transform = "translateX(0px)";
+    document.getElementById("indicator").style.transform = "translateX(100px)";
 }
 
 function login(){
-    RegisterForm.style.transform = "translateX(300px)";
-    LoginForm.style.transform = "translateX(300px)";
-    indicator.style.transform = "translateX(0px)";
+    document.getElementById("RegisterForm").style.transform = "translateX(300px)";
+    document.getElementById("LoginForm").style.transform = "translateX(300px)";
+    document.getElementById("indicator").style.transform = "translateX(0px)";
 }
 
 function validForm(){
@@ -54,8 +104,17 @@ function validForm(){
     {
         alert("check password");
     }
-
+	else if (checkInputUserName(username)==true && ValidateEmail(email)==true && verifyPassword(password)==true)
+	{
+		init();
+	}
+	
+	
 }
+
+
+		
+     
 
 
 function checkInputUserName(inputtxt)
@@ -98,3 +157,33 @@ function verifyPassword(pw) {
     return test;
       
   }  
+  
+ function load(){
+	 
+	fetch('pages/account.html')
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(body) {
+    document.querySelector('#sec').innerHTML = "";
+    document.querySelector('#sec').innerHTML = body;
+  });
+	 
+	 
+ }
+
+
+ function loadIndex(){
+	 
+	fetch('index.html')
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(body) {
+    document.querySelector('#sec').innerHTML = "";
+    document.querySelector('#sec').innerHTML = body;
+  });
+	 
+	 
+ }
+
